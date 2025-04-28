@@ -457,9 +457,27 @@ h6 {
   width: 65px;
 }
 
+.visitor-count {
+  display: flex;
+  align-items: center;
+} 
+
+.visit-text {
+  font-size: medium;
+  font-weight: bold;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#CounterVisitor {
+  padding-left: 8px;
+}
+
+/*  
 .footer-logo-box a {
   display: inline-block;
-}
+} */
 
 .footer .copyright p {
   margin-bottom: 0;

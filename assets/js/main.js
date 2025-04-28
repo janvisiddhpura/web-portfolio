@@ -1,8 +1,4 @@
-/**
-* Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
+/** Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
 
@@ -125,7 +121,7 @@
   skillsAnimation.forEach((item) => {
     new Waypoint({
       element: item,
-      offset: '80%',
+      offset: '80%',  
       handler: function(direction) {
         let progress = item.querySelectorAll('.progress .progress-bar');
         progress.forEach(el => {
@@ -282,4 +278,43 @@
     }, { threshold: 0.5 });
     skills.forEach(skill => observer.observe(skill));
   });
+
+  /**
+   * Website visit counter
+   */
+    var n = localStorage.getItem('on_load_counter');
+    if (n === null) {
+        n = 0;
+    }
+    n++;
+    localStorage.setItem("on_load_counter", n);
+    const numberContainer = document.getElementById('CounterVisitor');
+    const targetNumber = parseInt(n);
+    let currentNumber = 0;
+    let animationFrameId;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateNumber();
+        } else {
+          cancelAnimationFrame(animationFrameId);
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    observer.observe(numberContainer);
+    
+    function animateNumber() {
+      const increment = targetNumber / 50;
+      if (currentNumber < targetNumber) {
+        currentNumber += increment;
+        numberContainer.textContent = Math.floor(currentNumber);
+        animationFrameId = requestAnimationFrame(animateNumber);
+      } else {
+        numberContainer.textContent = targetNumber;
+      }
+    }
+
+  
+
 })();
