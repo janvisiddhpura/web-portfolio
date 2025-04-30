@@ -282,39 +282,16 @@
   /**
    * Website visit counter
    */
-    var n = localStorage.getItem('on_load_counter');
-    if (n === null) {
-        n = 0;
-    }
-    n++;
-    localStorage.setItem("on_load_counter", n);
-    const numberContainer = document.getElementById('CounterVisitor');
-    const targetNumber = parseInt(n);
-    let currentNumber = 0;
-    let animationFrameId;
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateNumber();
-        } else {
-          cancelAnimationFrame(animationFrameId);
-        }
-      });
-    }, { threshold: 0.1 });
-  
-    observer.observe(numberContainer);
-    
-    function animateNumber() {
-      const increment = targetNumber / 50;
-      if (currentNumber < targetNumber) {
-        currentNumber += increment;
-        numberContainer.textContent = Math.floor(currentNumber);
-        animationFrameId = requestAnimationFrame(animateNumber);
-      } else {
-        numberContainer.textContent = targetNumber;
-      }
-    }
-
-  
-
+    var n;
+    window.onload = function() {
+      fetch('https://9dm60k22yd.execute-api.ap-south-1.amazonaws.com/increment')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('CounterVisitor').innerHTML = data.count;
+          n = data.count;
+        })
+        .catch(err => {
+          console.error('Error fetching visitor count:', err);
+        });
+    };
 })();
