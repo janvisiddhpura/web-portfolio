@@ -1,6 +1,6 @@
 # 🌐 Personal Web Portfolio
 
-- ### Welcome to my Personal Portfolio Website — a modern, responsive showcase of my projects, skills, and professional journey as a web developer.
+> A modern, responsive showcase of my projects, skills, and professional journey.
 
 #### ✨ Overview
 
