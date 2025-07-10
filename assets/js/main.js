@@ -1,7 +1,3 @@
-/** Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -276,22 +272,6 @@
             }
         });
     }, { threshold: 0.5 });
-    skills.forEach(skill => observer.observe(skill));
+    skills.forEach(skill => observer.observe(skill)); 
   });
-
-  /**
-   * Website visit counter
-   */
-    var n;
-    window.onload = function() {
-      fetch('https://9dm60k22yd.execute-api.ap-south-1.amazonaws.com/increment')
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById('CounterVisitor').innerHTML = data.count;
-          n = data.count;
-        })
-        .catch(err => {
-          console.error('Error fetching visitor count:', err);
-        });
-    };
 })();

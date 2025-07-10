@@ -1,62 +1,26 @@
-/**
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
-}
+  /* Fonts */
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #4e4e4e; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0a090f; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #7e8085; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
+  /* Global Colors */
+  --background-color: #0F172A;       /* Dark Navy */
+  --default-color: #b6b6b6;          /* Cool Gray */
+  --heading-color: #096e82;          /* Muted Cyan */
+  --accent-color: #096e82;           /* Muted Cyan */
+  --surface-color: #1E293B;          /* Darker Navy */
+  --contrast-color: #F4F4F4;         /* Light Gray */
+  --accent-color-rgb: #0BC5EA;
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #7e8085; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
-.light-background {
-  --background-color: #f9f9f9;
-  --surface-color: #ffffff;
-}
-
-.dark-background {
-  --background-color: #060606;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
-  --contrast-color: #ffffff;
-}
-
-.accent-background {
-  --background-color: #7e8085;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --accent-color: #ffffff;
-  --surface-color: #0a66ce;
-  --contrast-color: #ffffff;
-  --new-color: #0A2A4D;
+  /* Nav Menu Colors */
+  --nav-color: #0BC5EA;                      /* Muted Cyan nav links */
+  --nav-hover-color: #F4F4F4;                /* Light Gray hover */
+  --nav-mobile-background-color: #0F172A;   /* Dark Navy mobile nav */
+  --nav-dropdown-background-color: #1E293B; /* Darker Navy dropdown bg */
+  --nav-dropdown-color: #0BC5EA;             /* Muted Cyan dropdown links */
+  --nav-dropdown-hover-color: #F4F4F4;       /* Light Gray dropdown hover */
 }
 
 /* Smooth scroll */
@@ -64,12 +28,10 @@
   scroll-behavior: smooth;
 }
 
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
+/* General Styling */
 body {
-  /* color: var(--default-color); */
-  /* background-color: var(--background-color); */
+  color: var(--default-color);
+  background-color: var(--background-color);
   font-family: var(--default-font);
 }
 
@@ -84,80 +46,19 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Global Header
---------------------------------------------------------------*/
+/* Header */
 .header {
-  --background-color: #111111;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 997;  
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.4);
 }
 
 .header .logo {
@@ -177,13 +78,11 @@ h6 {
 }
 
 .scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.4);
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation */
+/* Navigation Menu */
+/* Desktop */
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -201,12 +100,12 @@ h6 {
     position: relative;
   }
 
-  .navmenu>ul>li {
+  .navmenu > ul > li {
     white-space: nowrap;
     padding: 15px 14px;
   }
 
-  .navmenu>ul>li:last-child {
+  .navmenu > ul > li:last-child {
     padding-right: 0;
   }
 
@@ -233,7 +132,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu>ul>li>a:before {
+  .navmenu > ul > li > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -242,18 +141,18 @@ h6 {
     left: 0;
     background-color: var(--nav-hover-color);
     visibility: hidden;
-    width: 0px;
+    width: 0;
     transition: all 0.3s ease-in-out 0s;
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover>a:before,
+  .navmenu li:hover > a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -272,7 +171,7 @@ h6 {
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   }
 
   .navmenu .dropdown ul li {
@@ -292,11 +191,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -308,7 +207,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -410,7 +309,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -437,17 +336,16 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
 
-/*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
+/* Footer */
 .footer {
   color: var(--default-color);
-  background-color: #111111;
+  background-color: var(--background-color);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
   font-size: 14px;
   padding: 40px 0;
   position: relative;
@@ -460,7 +358,7 @@ h6 {
 .visitor-count {
   display: flex;
   align-items: center;
-} 
+}
 
 .visit-text {
   font-size: medium;
@@ -473,11 +371,6 @@ h6 {
 #CounterVisitor {
   padding-left: 8px;
 }
-
-/*  
-.footer-logo-box a {
-  display: inline-block;
-} */
 
 .footer .copyright p {
   margin-bottom: 0;
@@ -508,8 +401,6 @@ h6 {
 .footer .social-links a:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
-  /* color: var(--default-color);
-  border-color: var(--default-color); */
 }
 
 .footer .credits {
@@ -522,9 +413,7 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/* Preloader */
 #preloader {
   position: fixed;
   inset: 0;
@@ -539,7 +428,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #ffffff;
+  border: 6px solid var(--accent-color);
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
   width: 60px;
@@ -548,18 +437,11 @@ h6 {
 }
 
 @keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-/*--------------------------------------------------------------
-# Scroll Top Button
---------------------------------------------------------------*/
+/* Scroll Top Button */
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -591,18 +473,14 @@ h6 {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+/* Disable aos animation delay on mobile */
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
+/* Page Titles & Breadcrumbs */
 .page-title {
   --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   color: var(--default-color);
@@ -626,20 +504,18 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-/*--------------------------------------------------------------
-# Global Sections
---------------------------------------------------------------*/
+/* Global Sections */
 section,
 .section {
   color: var(--default-color);
@@ -650,16 +526,13 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 76px;
   }
 }
 
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
+/* Section Titles */
 .section-title {
   text-align: center;
   padding-bottom: 60px;
@@ -691,9 +564,7 @@ section,
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/* Hero Section */
 .hero {
   width: 100%;
   min-height: calc(100vh - 92px);
@@ -731,12 +602,14 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
+  color: var(--heading-color);
 }
 
 .hero p {
   margin: 5px 0 0 0;
   font-size: 36px;
   font-weight: 600;
+  color: var(--default-color);
 }
 
 .hero p span {
@@ -753,12 +626,10 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
+/* About Section */
 .about .container {
-  background-color: var(--surface-color);  
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--surface-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
 
@@ -770,6 +641,7 @@ section,
   font-size: 18px;
   font-weight: 700;
   margin: 30px 0 15px 0;
+  color: var(--heading-color);
 }
 
 .about .progress {
@@ -813,6 +685,7 @@ section,
   padding-bottom: 10px;
   margin-bottom: 30px;
   font-weight: 700;
+  color: var(--heading-color);
 }
 
 .about .about-me h4:after {
@@ -828,13 +701,11 @@ section,
 }
 
 .about .about-me p {
-  /* font-size: 18px; */
   text-align: justify;
+  color: var(--default-color);
 }
 
-/*--------------------------------------------------------------
-# Resume Section
---------------------------------------------------------------*/
+/* Resume Section */
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
@@ -891,11 +762,8 @@ section,
   border: 2px solid var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# skills Section
---------------------------------------------------------------*/
-
-.skill-item {  
+/* Skills Section */
+.skill-item {
   width: 150px;
   height: 180px;
 }
@@ -917,7 +785,7 @@ section,
 }
 
 .skill-circle .progress {
-  stroke: #ffffff;
+  stroke: var(--contrast-color);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   transition: stroke-dashoffset 1s ease-out;
@@ -929,7 +797,7 @@ section,
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #ffffff;
+  color: var(--contrast-color);
 }
 
 .skill-text img {
@@ -950,12 +818,11 @@ section,
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
+  color: var(--contrast-color);
 }
 
 .animated {
   opacity: 0;
-  /* animation: spin 0.8s linear infinite; */
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.3s ease-out;
 }
@@ -965,9 +832,7 @@ section,
   transform: translateY(0);
 }
 
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
+/* Stats Section */
 .stats {
   position: relative;
   padding: 120px 0;
@@ -1017,9 +882,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
+/* Portfolio Section */
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1065,11 +928,11 @@ section,
 }
 
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  opacity: 0.6;
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 0;
+  bottom: 20px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
@@ -1080,6 +943,7 @@ section,
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
+  color: var(--heading-color);
 }
 
 .portfolio .portfolio-item .portfolio-info p {
@@ -1110,16 +974,50 @@ section,
   font-size: 28px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 20px;
+.image-link-icon {
+  position: absolute;
+  bottom: 87%;
+  left: 85%;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 0;
+  text-decoration: none;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  transition: 0.3s;
+  line-height: 0;
+  background-color: #060606;
 }
 
-/*--------------------------------------------------------------
-# Certificate Section
---------------------------------------------------------------*/
+.image-link-icon:hover {
+  background-color: #212830;
+  color: var(--contrast-color);
+}
+
+/* section::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  background-color: var(--default-color);   Replace with below 
+  box-shadow: 0 0 4px var(--default-color);
+  margin: 30px auto 0 auto;
+  border-radius: 2px;
+}
+
+section:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  background-color: var(--default-color);
+  box-shadow: 0 0 4px var(--default-color);
+  margin: 30px auto 0 auto;
+  border-radius: 2px;
+} */
+
+/* Certificate Section */
 .certificate .certificate-item {
-  border-bottom: 1px dashed color-mix(in srgb, var(--default-color), transparent 60%);
+  border-bottom: 1px dashed color-mix(in srgb, var(--default-color), transparent 60%);  
   width: 100%;
   height: 100%;
   padding: 0 0 15px 0;
@@ -1129,6 +1027,7 @@ section,
   margin: 0;
   font-size: 20px;
   font-weight: 600;
+  color: var(--default-color);
 }
 
 .certificate .certificate-item h4 {
@@ -1137,12 +1036,10 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
+/* Contact Section */
 .contact .info-wrap {
-  background-color: var(--surface-color);  
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--surface-color);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   padding: 30px;
   margin-bottom: 30px;
 }
@@ -1165,12 +1062,14 @@ section,
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 2px 0;
+  color: var(--heading-color);
 }
 
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+  color: var(--default-color);
 }
 
 .contact .info-item a {
@@ -1187,9 +1086,7 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
+/* Portfolio Details Section */
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
@@ -1224,7 +1121,6 @@ section,
 }
 
 @media (max-width: 575px) {
-
   .portfolio-details .swiper-button-prev,
   .portfolio-details .swiper-button-next {
     display: none;
@@ -1253,6 +1149,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: var(--heading-color);
 }
 
 .portfolio-details .portfolio-info h3:after {
@@ -1301,10 +1198,12 @@ section,
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: var(--heading-color);
 }
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  color: var(--default-color);
 }
 
 .portfolio-details .portfolio-description .testimonial-item {
@@ -1327,6 +1226,7 @@ section,
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
+  color: var(--default-color);
 }
 
 .portfolio-details .portfolio-description .testimonial-item h4 {
@@ -1360,11 +1260,10 @@ section,
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
+  color: var(--default-color);
 }
 
-/*--------------------------------------------------------------
-# skill Details Section
---------------------------------------------------------------*/
+/* Skill Details Section */
 .skill-details .skills-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
@@ -1399,15 +1298,18 @@ section,
 .skill-details h3 {
   font-size: 26px;
   font-weight: 700;
+  color: var(--heading-color);
 }
 
 .skill-details h4 {
   font-size: 20px;
   font-weight: 700;
+  color: var(--heading-color);
 }
 
 .skill-details p {
   font-size: 15px;
+  color: var(--default-color);
 }
 
 .skill-details ul {

@@ -23,6 +23,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body class="index-page" bgcolor="#0A2A4D">
+  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">  
@@ -34,23 +35,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#resume">Resume</a></li>
-          <li class="dropdown"><a href="#"><span>Work</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+          <li><a href="#portfolio">Work</a></li>
           <li><a href="#certificate">Certificates</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -58,6 +43,8 @@
       </nav>
     </div>
   </header>
+  <!-- End Header -->
+
   <main class="main dark-background">
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
@@ -66,7 +53,9 @@
         <h2>I am Janvi Siddhpura</h2>
         <p><span class="typed" data-typed-items="Mobile App Developer, Coding Expert for AI Model Training, Freelancer"></span></p>
       </div>
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- End Hero Section -->
+
     <!-- About Section -->
     <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -74,7 +63,7 @@
           <div class="col-md-6">
             <div class="row align-items-center gy-4">
               <div class="col-lg-5">
-                <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="">
+                <img src="assets/img/profile-img.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-7 about-info"><br>
                 <p class="about-name"><strong>Name: </strong> <span> Janvi Siddhpura </span></p>
@@ -90,31 +79,31 @@
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
+              </div>
               <div class="progress">
                 <span class="skill"><span>Communication</span> <i class="val">80%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
+              </div>
               <div class="progress">
                 <span class="skill"><span>Adaptability</span> <i class="val">90%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
+              </div>
               <div class="progress">
                 <span class="skill"><span>Teamwork</span> <i class="val">85%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
+              </div>
               <div class="progress">
                 <span class="skill"><span>Problem-solving</span> <i class="val">75%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div><!-- End Skills Item -->
+              </div>
             </div>
           </div>
           <div class="col-md-6">
@@ -141,14 +130,15 @@
           </div>
         </div>
       </div>
-    </section><!-- About Section -->
+    </section>
+    <!-- End About Section -->
+    
     <!-- Skills Section -->
     <section id="skills" class="skills section">
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Technical Skills</h2>
         <p>A quick look of the programming languages, frameworks, and tools I work with!</p>
-      </div><!-- End Section Title -->
+      </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12">
@@ -182,6 +172,19 @@
                   </div>
                 </div>
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
+                  <div class="skill-item mx-auto animated" data-skill="Android" data-percent="50">
+                    <svg class="skill-circle">
+                        <circle class="bg" cx="70" cy="70" r="70"></circle>
+                        <circle class="progress" cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="skill-text">
+                        <img src="assets/img/icons/bash-icon.svg"/>
+                        <div class="skill-percent">0%</div>                                  
+                        <div class="skill-name">Bash</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="C++" data-percent="75">
                     <svg class="skill-circle">
                         <circle class="bg" cx="70" cy="70" r="70"></circle>
@@ -207,6 +210,10 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-lg-1"></div>
+              </div>
+              <div class="row justify-content-center row-no-gutters">
+                <div class="col-lg-1"></div>                
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="CSS" data-percent="80">
                     <svg class="skill-circle">
@@ -220,10 +227,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-1"></div>
-              </div>
-              <div class="row justify-content-center row-no-gutters">
-                <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="Dart" data-percent="75">
                     <svg class="skill-circle">
@@ -275,7 +278,11 @@
                         <div class="skill-name">Firebase</div>
                     </div>
                   </div>
-                </div>
+                </div>                
+                <div class="col-lg-1"></div>
+              </div>
+              <div class="row justify-content-center row-no-gutters">
+                <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="Flutter" data-percent="80">
                     <svg class="skill-circle">
@@ -289,10 +296,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-1"></div>
-              </div>
-              <div class="row justify-content-center row-no-gutters">
-                <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="Git" data-percent="85">
                     <svg class="skill-circle">
@@ -344,7 +347,11 @@
                         <div class="skill-name">JavaScript</div>
                     </div>
                   </div>
-                </div>
+                </div>                
+                <div class="col-lg-1"></div>
+              </div>
+              <div class="row justify-content-center row-no-gutters">
+                <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="jQuery" data-percent="80">
                     <svg class="skill-circle">
@@ -358,10 +365,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-1"></div>
-              </div>
-              <div class="row justify-content-center row-no-gutters">
-                <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="MongoDB" data-percent="85">
                     <svg class="skill-circle">
@@ -413,7 +416,11 @@
                         <div class="skill-name">PHP</div>
                     </div>
                   </div>
-                </div>
+                </div>                
+                <div class="col-lg-1"></div>
+              </div>
+              <div class="row justify-content-center row-no-gutters">
+                <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="Python" data-percent="75">
                     <svg class="skill-circle">
@@ -427,10 +434,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-1"></div>
-              </div>
-              <div class="row justify-content-center row-no-gutters">
-                <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
                   <div class="skill-item mx-auto animated" data-skill="TypeScript" data-percent="85">
                     <svg class="skill-circle">
@@ -444,58 +447,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
-                  <div class="skill-item mx-auto animated" data-skill="HTML" data-percent="90">
-                    <svg class="skill-circle">
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle class="progress" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="skill-text">
-                        <img src="assets/img/icons/docker-icon.svg"/>
-                        <div class="skill-percent">0%</div>                                  
-                        <div class="skill-name">Docker</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
-                  <div class="skill-item mx-auto animated" data-skill="HTML" data-percent="90">
-                    <svg class="skill-circle">
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle class="progress" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="skill-text">
-                        <img src="assets/img/icons/docker-icon.svg"/>
-                        <div class="skill-percent">0%</div>                                  
-                        <div class="skill-name">Docker</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
-                  <div class="skill-item mx-auto animated" data-skill="HTML" data-percent="90">
-                    <svg class="skill-circle">
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle class="progress" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="skill-text">
-                        <img src="assets/img/icons/docker-icon.svg"/>
-                        <div class="skill-percent">0%</div>                                  
-                        <div class="skill-name">Docker</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 col-sm-4 col-md-4 mb-4">
-                  <div class="skill-item mx-auto animated" data-skill="HTML" data-percent="90">
-                    <svg class="skill-circle">
-                        <circle class="bg" cx="70" cy="70" r="70"></circle>
-                        <circle class="progress" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="skill-text">
-                        <img src="assets/img/icons/docker-icon.svg"/>
-                        <div class="skill-percent">0%</div>                                  
-                        <div class="skill-name">Docker</div>
-                    </div>
-                  </div>
-                </div>
                 <div class="col-lg-1"></div>
               </div>
             </div>    
@@ -503,14 +454,14 @@
         </div>
       </div>
     </section>    
-    <!-- Skills Section -->
+    <!-- End Skills Section -->
+
     <!-- Resume Section -->
-    <section id="resume" class="resume section">
-      <!-- Section Title -->
+    <section id="resume" class="resume section">      
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <p>A concise overview of qualifications, academic background, and hands-on professional experience.</p>
-      </div><!-- End Section Title -->
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -522,20 +473,20 @@
                 in computer engineering with a focus on user experience and code quality. Ready to bring technical excellence, problem-solving
                 skills, and a passion for continuous learning to a dynamic team.
               </em></p>
-            </div><!-- End Resume Item -->
+            </div>
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Bachelor of Technology in Computer Engineering</h4>
               <h5>2020 - 2023</h5>
               <p><em>RK University, Gujarat, IN</em></p>
               <p>CGPA: 9.01</p>
-            </div><!-- End Resume Item -->
+            </div>
             <div class="resume-item">
               <h4>Diploma in Computer Engineering</h4>
               <h5>2017 - 2020</h5>
               <p><em>RK University, Gujarat, IN</em></p>
               <p>CGPA: 9.66</p>
-            </div><!-- End Resume Item -->
+            </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Work Experience</h3>
@@ -548,7 +499,7 @@
                 <li>Assess code quality, functionality, and adherence to industry best practices across multiple programming languages.</li>
                 <li>Contribute to LLM training by identifying edge cases and suggesting optimization strategies.</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
             <div class="resume-item">
               <h4>Packaged App Development Associate Trainee</h4>
               <h5>2024</h5>
@@ -557,7 +508,7 @@
                 <li>Completed comprehensive training in cutting-edge technologies including Software Engineering, Web Technology, and AI.</li>
                 <li>Gained a knowledge with Python, AWS cloud infrastructure, DevOps methodologies, and DevSecOps practices.</li>                
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
             <div class="resume-item">
               <h4>Flutter Developer Trainee</h4>
               <h5>2022 - 2023</h5>
@@ -566,7 +517,7 @@
                 <li>Designed and implemented multiple Flutter-based applications for cross-platform deployment.</li>
                 <li>Contributed to codebase optimization resulting in improved application performance and user experience.</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
             <div class="resume-item">
               <h4>Mulesoft Developer Level 1 Trainee</h4>
               <h5>2022</h5>
@@ -576,7 +527,7 @@
                 <li>Designed efficient data transformation workflows using DataWeave.</li>
                 <li>Implemented role-based access control for secure API consumption.</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
             <div class="resume-item">
               <h4>Android Developer Trainee</h4>
               <h5>2020</h5>
@@ -585,226 +536,164 @@
                 <li>Developed and maintained Android applications focusing on responsive design and functionality.</li>
                 <li>Gained practical experience with Android SDK and application lifecycle management.</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
           </div>
         </div>
       </div>
-    </section><!-- /Resume Section -->
+    </section>
+    <!-- End Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2>Work</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
+              <img src="assets/img/portfolio/1-code-orbit.png" class="img-fluid" alt="">
+              <a href="https://github.com/janvisiddhpura/code-orbit" title="Click here" class="image-link-icon">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
+              <img src="assets/img/portfolio/2-serverless-web-app.png" class="img-fluid" alt="">
+              <a href="https://github.com/janvisiddhpura/serverless-web-app" title="Click here" class="image-link-icon">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
+              <img src="assets/img/portfolio/3-shell-scripting.png" class="img-fluid" alt="">
+              <a href="https://github.com/janvisiddhpura/shell-scripting-projects" title="Click here" class="image-link-icon">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row gy-4 isotope-container pt-4" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-          </div><!-- End Portfolio Container -->
+              <img src="assets/img/portfolio/4-dazle-app.png" class="img-fluid" alt="">
+              <a href="https://github.com/janvisiddhpura/dazle_updated" title="Click here" class="image-link-icon">
+                <i class="bi bi-link-45deg"></i>
+              </a>  
+            </div>            
+            </div>
+          </div>
         </div>
       </div>
-    </section><!-- /Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
 
     <!-- Certificate Section -->
     <section id="certificate" class="certificate section">
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Achivements</h2>
         <p>Recognitions and certifications demonstrating skills, knowledge, and dedication to professional growth.</p>
-      </div><!-- End Section Title -->
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 gx-lg-5">
+          <div class="col-lg-6">
+            <div class="certificate-item d-flex justify-content-between">
+              <h3>Microsoft AI Skills Fest</h3>
+              <h4>2025</h4>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="certificate-item d-flex justify-content-between">
+              <h3>Microsoft-Learner-Badge-Guinness-World-Record-Holder</h3>
+              <h4>2025</h4>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="certificate-item d-flex justify-content-between">
+              <h3><b>AWS</b>OME DAY online conference</h3>
+              <h4>2025</h4>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="certificate-item d-flex justify-content-between">
+              <h3>Tata Crucible Corporate Quiz</h3>
+              <h4>2025</h4>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="certificate-item d-flex justify-content-between">
+              <h3>Microsoft AI Skill Challenge</h3>
+              <h4>2024</h4>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="certificate-item d-flex justify-content-between">
+              <h3><b>AWS</b>OME DAY online conference</h3>
+              <h4>2024</h4>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="certificate-item d-flex justify-content-between">
+              <h3>Super Growth Summit</h3>
+              <h4>2023</h4>
+            </div>
+          </div>
           <div class="col-lg-6">
             <div class="certificate-item d-flex justify-content-between">
               <h3>Salesforce certified Mulesoft Developer Level 1</h3>
               <h4>2022 - 2024</h4>
             </div>
-          </div><!-- End certificate Item -->
+          </div>
           <div class="col-lg-6">
             <div class="certificate-item d-flex justify-content-between">
               <h3>CyberOps Associate</h3>
               <h4>2022-2024</h4>
             </div>
-          </div><!-- End certificate Item -->
+          </div>
           <div class="col-lg-6">
             <div class="certificate-item d-flex justify-content-between">
               <h3>AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
               <h4>2022</h4>
             </div>
-          </div><!-- End certificate Item -->
+          </div>
           <div class="col-lg-6">
             <div class="certificate-item d-flex justify-content-between">
               <h3>Cybersecurity Essentials</h3>
               <h4>2021</h4>
             </div>
-          </div><!-- End certificate Item -->
+          </div>
           <div class="col-lg-6">
             <div class="certificate-item d-flex justify-content-between">
               <h3>Introduction to Cybersecurity</h3>
               <h4>2021</h4>
             </div>
-          </div><!-- End certificate Item -->                    
+          </div>                    
           <div class="col-lg-6">
             <div class="certificate-item d-flex justify-content-between">
               <h3>Gold Medalist in DCE</h3>
               <h4>2020</h4>
             </div>
-          </div><!-- End certificate Item -->
+          </div>
           <div class="col-lg-6">
             <div class="certificate-item d-flex justify-content-between">
               <h3>Runner-up Troubleshooting event</h3>
               <h4>2019</h4>
             </div>
-          </div><!-- End certificate Item -->
+          </div>
           <div class="col-lg-6">
             <div class="certificate-item d-flex justify-content-between">
               <h3>Best Attendance Award</h3>
               <h4>2018</h4>
             </div>
-          </div><!-- End certificate Item -->          
+          </div>     
         </div>
       </div>
-    </section><!-- /certificate Section -->
-
+    </section>
+    <!-- End Certificate Section -->
+    
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <!-- Section Title -->
+    <section id="contact" class="contact section">      
       <div class="container section-title" data-aos="fade-up">
         <h2>Let's create something remarkable together!</h2>
         <h6>Drop me a message and let's connect!</h6>
-      </div><!-- End Section Title -->
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-5">
@@ -816,7 +705,7 @@
                   <a href="https://www.google.com/maps/place/Gujarat,+India" title="Click here">Gujarat, India</a>
                 </div>
               </div>
-            </div><!-- End Info Item -->
+            </div>
             <div class="col-lg-4">
               <div class="info-item d-flex align-items-center">
                 <a href="tel:+91 99251 67585"><i class="bi bi-telephone flex-shrink-0"></i></a>
@@ -825,47 +714,40 @@
                   <a href="tel:+91 99251 67585" title="Call me">+91 99251 67585</a>
                 </div>
               </div>
-            </div><!-- End Info Item -->
+            </div>
             <div class="col-lg-4">
               <div class="info-item d-flex align-items-center">
                 <a href="mailto:janvisiddhpura111@gmail.com"><i class="bi bi-envelope flex-shrink-0"></i></a>
                 <div>
                   <h3>Email</h3>
-                  <!-- <p>janvisiddhpura111@gmail.com</p> -->
                   <a href="mailto:janvisiddhpura111@gmail.com" title="Send me an email">janvisiddhpura111@gmail.com</a>
                 </div>
               </div>
-            </div><!-- End Info Item -->
+            </div>
           </div>
         </div>
       </div>
-    </section><!-- /Contact Section -->
+    </section>
+    <!-- End Contact Section -->
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 d-flex visitor-count justify-content-center">
-          <p class="visit-text">Visitor Count<span class="visit-text" id="CounterVisitor"></span></p>     
-        </div>   
-      </div>
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">      
       <div class="row">
         <div class="social-links d-flex justify-content-center">
           <a href="https://www.linkedin.com/in/janvi-siddhpura/"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/janvisiddhpura"><i class="bi bi-github"></i></a>
-          <!-- <a href=""><i class="bi bi-codechef"></i></a>           -->
         </div>
         <div class="col-md-12 copyright text-center pt-3">
           <p>© <span>Copyright 2025</span> <span>All Rights Reserved by </span> <strong class="px-1 sitename">Janvi Siddhpura</strong></p>
         </div>
       </div>  
     </div>
-  </footer>
-  <!-- Scroll Top -->
+  </footer> 
+  <!-- End Footer -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <!-- Preloader -->
   <div id="preloader"></div>
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -876,7 +758,6 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
