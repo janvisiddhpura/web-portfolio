@@ -18,13 +18,13 @@
 
 #### 🚀 Deployment & Security
 
-1. ☁️ Hosted on AWS S3:
+- ☁️ Hosted on AWS S3:
 
-- The website is securely deployed to Amazon S3, ensuring high availability and fast content delivery.
+    - The website is securely deployed to Amazon S3, ensuring high availability and fast content delivery.
 
-2. 🛡️ Secured with CloudFront:
+- 🛡️ Secured with CloudFront:
 
-- All access is routed through an AWS CloudFront distribution, providing robust security and global performance.
+    - All access is routed through an AWS CloudFront distribution, providing robust security and global performance.
 
 #### 📸 Features
 
