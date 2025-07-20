@@ -978,19 +978,20 @@ section,
   position: absolute;
   bottom: 87%;
   left: 85%;
-  padding: 8px;
+  padding: 2%;
   font-size: 18px;
   border-radius: 0;
   text-decoration: none;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   transition: 0.3s;
   line-height: 0;
-  background-color: #060606;
+  background-color: var(--background-color);
 }
 
 .image-link-icon:hover {
-  background-color: #212830;
-  color: var(--contrast-color);
+  /* background-color: color-mix(in srgb, var(--default-color)); */
+  color: var(--background-color);
+  background-color: var(--default-color);
 }
 
 /* section::after {
