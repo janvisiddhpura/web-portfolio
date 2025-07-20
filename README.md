@@ -36,6 +36,6 @@
 
 #### 👤 Author
 
-- Crafted with passion by janvisiddhpura.
+- Crafted with passion by **janvisiddhpura**.
 
 - Thank you for visiting my portfolio! For collaboration or inquiries, please connect with me via GitHub.
